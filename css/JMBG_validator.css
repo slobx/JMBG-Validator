@@ -1,0 +1,38 @@
+.input_part {
+    width: 30%;
+    margin: auto;
+}
+
+h1 {
+    margin-top: 50px;
+}
+
+h3 {
+    margin-top: 50px;
+}
+
+#check_btn {
+    height: 30px;
+    width: 100px;
+    margin: -20px -50px;
+    margin-top: 10px;
+    text-align: center;
+    position: relative;
+    top: 50%;
+    left: 50%;
+}
+
+#head_p {
+    text-align: center;
+    margin-left: 600px;
+    margin-right: 600px;
+    margin-top: 80px;
+}
+
+#inputJMBG {
+    width: 100%;
+}
+
+#passwordHelpBlock {
+    text-align: center;
+}
