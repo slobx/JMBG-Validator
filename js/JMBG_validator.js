@@ -6,18 +6,14 @@ function validateJMBG(JMBG) {
         output.push(+number.charAt(i));
     }
 
-    var sum = 7 * output[0] + 6 * output[1] + 5 * output[2] + 4 * output[3] + 3 * output[4] + 2 * output[5] + 7 * output[6] + 6 * output[7] + 5 * output[8] + 4 * output[9] + 3 * output[10] + 2 * output[11];
-    if ((11 - (sum % 11)) == output[12]) {
+    var sum = (7 * output[0] + 6 * output[1] + 5 * output[2] + 4 * output[3] + 3 * output[4] + 2 * output[5] + 7 * output[6] + 6 * output[7] + 5 * output[8] + 4 * output[9] + 3 * output[10] + 2 * output[11]) % 11;
 
+
+    if (sum > 1 && ((11 - sum) == output[12]) || ((11 - sum) && output[12]) == 0) {
         return true;
     } else {
-        if ((11 - (sum % 11) && output[12]) == 0) {
-            return true;
-        } else {
-            return false;
-        }
+        return false;
     }
-
 
 }
 
